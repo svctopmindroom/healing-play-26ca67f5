@@ -31,12 +31,12 @@ export const scenes: Scene[] = [
     timeLabel: "AM 7:00",
     situation: "출근하기 싫지만 가려고 출근 준비하는 중. 오늘도 긴 하루가 될 것 같다.",
     subtext: "아직 집인데 벌써 피곤한 아침",
-    location: { name: "집", emoji: "🏠", positionPercent: 3, bgTime: 'morning', characterAction: 'standing' },
+    location: { name: "집에서 출발", emoji: "🏠", positionPercent: 3, bgTime: 'morning', characterAction: 'standing' },
     choices: [
       { text: "빨리 준비하고 나가자", emoji: "🏃", feedback: "에너지 -5, 긴장 상승. 마음도 준비 안 됐는데 몸만 먼저 나가면 하루가 버거워져요.", energyChange: -5, tag: 'drain' },
       { text: "좋아하는 음악 틀고 준비", emoji: "🎵", feedback: "에너지 +5, 기분 전환. 익숙한 노래 하나가 출근길 마음을 가볍게 해줘요.", energyChange: +5, tag: 'recover' },
       { text: "거울 보며 '오늘도 해보자'", emoji: "🪞", feedback: "에너지 +5, 자기 격려. 거창하지 않아도, 나한테 건네는 한마디가 힘이 돼요.", energyChange: +5, tag: 'recover' },
-      { text: "오늘 누구랑 점심 먹지? 생각하며 준비", emoji: "😊", feedback: "에너지 +5, 기대감 상승. 함께하는 동료 생각이 출근길을 가볍게 만들어줘요.", energyChange: +5, tag: 'recover' },
+      { text: "오늘 아침 무슨 커피 먹을까? 생각하며 준비", emoji: "☕", feedback: "에너지 +5, 기대감 상승. 작은 즐거움을 떠올리는 것만으로도 아침이 가벼워져요.", energyChange: +5, tag: 'recover' },
     ]
   },
   {
@@ -79,22 +79,22 @@ export const scenes: Scene[] = [
     location: { name: "내 자리", emoji: "🖥️", positionPercent: 32, bgTime: 'midmorning', characterAction: 'typing' },
     choices: [
       { text: "참고 계속", emoji: "😤", feedback: "에너지 -8, 피로 누적. 참는 게 강한 게 아니에요. 무시하면 오후에 더 힘들어져요.", energyChange: -8, tag: 'drain' },
-      { text: "자세 좀 바꿈", emoji: "🪑", feedback: "에너지 +3, 긴장 완화. 허리 펴고 어깨 한 번 돌리면 30초만에 달라져요.", energyChange: +3, tag: 'recover' },
+      { text: "가볍게 스트레칭 하며 자세 바꾸기", emoji: "🪑", feedback: "에너지 +3, 긴장 완화. 허리 펴고 어깨 한 번 돌리면 30초만에 달라져요.", energyChange: +3, tag: 'recover' },
       { text: "금새 화장실 다녀옴", emoji: "🚶", feedback: "에너지 +5, 기분 전환. 자리에서 일어나는 것만으로도 머리가 환기돼요.", energyChange: +5, tag: 'recover' },
       { text: "배고파서 그런가? 점심 뭐 먹지 기대하며 버티기", emoji: "🍱", feedback: "에너지 +4, 기대감 상승. 몸이 보내는 배고픔 신호를 알아채는 것도 자기 돌봄이에요.", energyChange: +4, tag: 'recover' },
     ]
   },
   {
     id: 4,
-    title: "빈 자리",
-    icon: "👤",
+    title: "콜이 많음",
+    icon: "📞",
     timeLabel: "PM 1:00",
-    situation: "동료가 출근하지 않음. 그 몫이 슬그머니 나한테 오는 느낌.",
-    subtext: "부족한 인력, 늘어나는 부담",
-    location: { name: "동료 자리", emoji: "🪑", positionPercent: 42, bgTime: 'noon', characterAction: 'standing' },
+    situation: "오늘따라 문의가 많음. 왠지 피곤한 날이 될 것 같은 느낌.",
+    subtext: "많은 문의, 쌓이는 피로감",
+    location: { name: "상담 창구", emoji: "🎧", positionPercent: 42, bgTime: 'noon', characterAction: 'standing' },
     choices: [
-      { text: "신경 쓰지 않기", emoji: "😑", feedback: "에너지 -8, 감정 마비. 반복되면 무감각해지고, 그게 위험 신호예요.", energyChange: -8, tag: 'drain' },
-      { text: "옆자리한테 안부", emoji: "💌", feedback: "에너지 +3, 연결감 상승. '괜찮아?' 한마디가 서로에게 위로가 돼요.", energyChange: +3, tag: 'recover' },
+      { text: "대기호 보며 미리 스트레스 받기 보다 '지금 현재' 내가 받고있는 콜에 집중하기", emoji: "🎯", feedback: "에너지 +5, 현재 집중. 앞으로 올 일을 걱정하기보다 지금 이 콜에 집중하면 마음이 가벼워져요.", energyChange: +5, tag: 'recover' },
+      { text: "'물들어 올때 노 젓는다.' 기왕 하는거 뭐라도 더해보자", emoji: "💪", feedback: "에너지 +5, 주도감 상승. 활발히 움직이면 몰입하면서 에너지가 생기기도 해요.", energyChange: +5, tag: 'recover' },
       { text: "성실하게 일하는 스스로를 뿌듯해함", emoji: "💪", feedback: "에너지 +4, 자존감 회복. 묵묵히 해내는 나, 충분히 대단해요.", energyChange: +4, tag: 'recover' },
       { text: "우리 실 다들 열심히 하는데... 나도 더 잘해보자", emoji: "🤜", feedback: "에너지 +5, 팀워크 상승. 함께 버티는 동료들이 있다는 건 큰 힘이에요.", energyChange: +5, tag: 'recover' },
     ]
@@ -108,7 +108,7 @@ export const scenes: Scene[] = [
     subtext: "자기 비난이 시작될 때",
     location: { name: "내 자리", emoji: "📊", positionPercent: 52, bgTime: 'afternoon', characterAction: 'sitting' },
     choices: [
-      { text: "생각 말기", emoji: "😰", feedback: "에너지 -10, 자책 심화. 억누르면 나중에 더 크게 터져요.", energyChange: -10, tag: 'drain' },
+      { text: "기분이 안좋아서 자꾸 스스로 비하하고 있음을 알아차리기", emoji: "🪞", feedback: "에너지 +5, 자기 인식. '아, 지금 내가 나를 깎고 있구나' 알아차리는 순간 멈출 수 있어요.", energyChange: +5, tag: 'recover' },
       { text: "짜증난다, 이름 붙임", emoji: "🏷️", feedback: "에너지 +4, 감정 정리. '아, 짜증이구나' 하면 뇌가 한 발 물러서요.", energyChange: +4, tag: 'recover' },
       { text: "뜻대로 안 되는 날도 있지만, 이러다 또 잘 된다", emoji: "🌤️", feedback: "에너지 +5, 회복력 강화. 오르막이 있으면 내리막도 있어요. 지금은 과정일 뿐이에요.", energyChange: +5, tag: 'recover' },
       { text: "이럴 때면 힘 주는 동료에게 메시지 보내기", emoji: "💬", feedback: "에너지 +5, 연결감 상승. 혼자 삼키지 않고 기대는 것도 용기예요.", energyChange: +5, tag: 'recover' },
@@ -123,9 +123,9 @@ export const scenes: Scene[] = [
     subtext: "작은 쉼이 큰 차이를 만들어요",
     location: { name: "내 자리", emoji: "🖥️", positionPercent: 62, bgTime: 'afternoon', characterAction: 'stretching' },
     choices: [
-      { text: "깊게 숨쉬기", emoji: "🫁", feedback: "에너지 +5, 긴장 해소. 들숨 4초, 참기 7초, 날숨 8초. 몸이 금방 풀려요.", energyChange: +5, tag: 'recover' },
+      { text: "깊게 숨쉬며 호흡으로 이완하기", emoji: "🫁", feedback: "에너지 +5, 긴장 해소. 들숨 4초, 참기 7초, 날숨 8초. 몸이 금방 풀려요.", energyChange: +5, tag: 'recover' },
       { text: "창밖 보기", emoji: "🪟", feedback: "에너지 +4, 시야 전환. 모니터에서 눈 떼고 먼 곳 보는 것만으로도 리셋돼요.", energyChange: +4, tag: 'recover' },
-      { text: "물 마시기", emoji: "💧", feedback: "에너지 +5, 몸 회복. 따뜻한 물 한 잔이 긴장을 풀어줘요.", energyChange: +5, tag: 'recover' },
+      { text: "물마시며 물의 온도를 느껴보기", emoji: "💧", feedback: "에너지 +5, 몸 회복. 따뜻한 물 한 잔이 긴장을 풀어줘요.", energyChange: +5, tag: 'recover' },
       { text: "피로감 털어버리는 몸 털기", emoji: "🕺", feedback: "에너지 +5, 활력 충전. 몸을 흔들면 긴장이 풀리고 기분이 전환돼요.", energyChange: +5, tag: 'recover' },
     ]
   },
@@ -138,7 +138,7 @@ export const scenes: Scene[] = [
     subtext: "내 안의 목소리, 어떤 말을 선택할까",
     location: { name: "내 자리", emoji: "🖥️", positionPercent: 72, bgTime: 'afternoon', characterAction: 'typing' },
     choices: [
-      { text: "내가 못하니까 이런 생각 들지...", emoji: "🌀", feedback: "에너지 -10, 자기비난 심화. 스스로를 탓하면 에너지만 더 빠져요. 못하는 게 아니라 지친 거예요.", energyChange: -10, tag: 'drain' },
+      { text: "이런 날은 나만 힘든게 아니지. 열심히 일하고 있는 주위를 돌아보기", emoji: "🤝", feedback: "에너지 +5, 연결감 상승. 나만 힘든 게 아니라는 걸 알면 외로움이 줄어들어요.", energyChange: +5, tag: 'recover' },
       { text: "우선순위 다시", emoji: "📋", feedback: "에너지 +4, 통제감 회복. 전부 다 못 해도 중요한 것부터 하면 돼요.", energyChange: +4, tag: 'recover' },
       { text: "기분 털고, 도움되는 생각 해보자", emoji: "🛡️", feedback: "에너지 +5, 자기 보호. 기분을 인정하고 전환하는 것, 그게 진짜 실력이에요.", energyChange: +5, tag: 'recover' },
     ]
@@ -152,9 +152,9 @@ export const scenes: Scene[] = [
     subtext: "따뜻한 한마디의 힘",
     location: { name: "퇴근무렵", emoji: "🌇", positionPercent: 80, bgTime: 'evening', characterAction: 'talking' },
     choices: [
-      { text: "오늘 좀 벅찼어. 너는 어땠어?", emoji: "👋", feedback: "에너지 +4, 감정 해소. 솔직하게 나누면 서로 마음이 가벼워져요.", energyChange: +4, tag: 'recover' },
-      { text: "아까 알려줘서 고마워", emoji: "🫂", feedback: "에너지 +5, 연결감 상승. 고마움을 표현하면 나도 따뜻해져요.", energyChange: +5, tag: 'recover' },
-      { text: "정리할 시간 필요", emoji: "🙏", feedback: "에너지 +4, 경계 설정. 내 상태를 말하는 건 약한 게 아니에요.", energyChange: +4, tag: 'recover' },
+      { text: "오늘은 쉽지 않더라. 벅차던데 너는 어땠어?", emoji: "👋", feedback: "에너지 +4, 감정 해소. 솔직하게 나누면 서로 마음이 가벼워져요.", energyChange: +4, tag: 'recover' },
+      { text: "아까 도와주셔서 덕분에 마무리 했어요. 고맙습니다.", emoji: "🫂", feedback: "에너지 +5, 연결감 상승. 고마움을 표현하면 나도 따뜻해져요.", energyChange: +5, tag: 'recover' },
+      { text: "나 오늘은 에너지를 많이 써서 혼자서 충전하는 시간을 좀 가져야겠어.", emoji: "🙏", feedback: "에너지 +4, 경계 설정. 내 상태를 말하는 건 약한 게 아니에요.", energyChange: +4, tag: 'recover' },
       { text: "같이 저녁 먹으러 갈래?", emoji: "🍽️", feedback: "에너지 +5, 유대감 상승. 함께하는 시간이 하루의 피로를 녹여줘요.", energyChange: +5, tag: 'recover' },
     ]
   },
@@ -184,8 +184,8 @@ export const scenes: Scene[] = [
     subtext: "거창하지 않아도 돼요. 하나면 충분해요.",
     location: { name: "집", emoji: "🏠", positionPercent: 97, bgTime: 'night', characterAction: 'resting' },
     choices: [
-      { text: "점심시간 5분 나가 산책하기", emoji: "🚶", feedback: "에너지 +3, 회복 계획. 5분 바깥 공기만으로도 오후가 달라져요.", energyChange: +3, tag: 'recover' },
-      { text: "물 먼저 마시기", emoji: "💧", feedback: "에너지 +3, 습관 형성. 가장 작은 시작이 가장 오래 가요.", energyChange: +3, tag: 'recover' },
+      { text: "매일 출근하는 나에게 힘이 나는 응원곡 1개 플레이리스트에 넣어두기", emoji: "🎧", feedback: "에너지 +3, 회복 계획. 출근길 한 곡이 내일의 나에게 힘이 돼요.", energyChange: +3, tag: 'recover' },
+      { text: "오늘은 바빠서 못했던, 동료와 스몰토크 해야지", emoji: "💬", feedback: "에너지 +3, 연결 계획. 바쁜 와중에도 잠깐의 대화가 관계를 유지해요.", energyChange: +3, tag: 'recover' },
       { text: "알림 끄기 20분", emoji: "🔕", feedback: "에너지 +3, 경계 연습. 20분의 고요가 내일의 나를 지켜줘요.", energyChange: +3, tag: 'recover' },
     ]
   }
