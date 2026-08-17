@@ -71,7 +71,6 @@ const CharacterSelect = ({ onSelect }: CharacterSelectProps) => {
                 >
                   <span className="text-5xl">{char.emoji}</span>
                   <span className="text-sm font-bold text-foreground">{char.label}</span>
-                  <span className="text-[10px] text-muted-foreground">{char.desc}</span>
                   <span className="text-[10px] font-semibold text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full">{char.trait}</span>
                 </motion.button>
               ))}
