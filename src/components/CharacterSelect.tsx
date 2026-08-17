@@ -9,10 +9,10 @@ export interface CharacterInfo {
 }
 
 const characters = [
-  { id: "m1", emoji: "👨‍💼", label: "차분한 기획자 : 꼼꼼하게 준비해 완벽하게-", gender: "male", desc: "꼼꼼하고 신중한 성격", trait: "🧠 분석형" },
-  { id: "m2", emoji: "🧑‍💻", label: "열정적 도전자 : 잘하고 싶은 열정으로 도전!", gender: "male", desc: "도전을 즐기는 에너자이저", trait: "🔥 도전형" },
-  { id: "f1", emoji: "👩‍💼", label: "따뜻한 지지자 : 함께 멀리 가자~", gender: "female", desc: "동료를 먼저 챙기는 팀플레이어", trait: "💛 공감형" },
-  { id: "f2", emoji: "👩‍🎨", label: "유쾌한 실행자 : 오늘도 웃으며 출발 :)", gender: "female", desc: "감각적이고 창의적인 자유영혼", trait: "🎨 감성형" },
+  { id: "m1", emoji: "👨‍💼", label: "차분한 기획자 : 꼼꼼하게 준비해 완벽하게-", gender: "male", trait: "🧠 분석형" },
+  { id: "m2", emoji: "🧑‍💻", label: "열정적 도전자 : 잘하고 싶은 열정으로 도전!", gender: "male", trait: "🔥 도전형" },
+  { id: "f1", emoji: "👩‍💼", label: "따뜻한 지지자 : 함께 멀리 가자~", gender: "female", trait: "💛 공감형" },
+  { id: "f2", emoji: "👩‍🎨", label: "유쾌한 실행자 : 오늘도 웃으며 출발 :)", gender: "female", trait: "🎨 감성형" },
 ];
 
 interface CharacterSelectProps {
@@ -71,7 +71,6 @@ const CharacterSelect = ({ onSelect }: CharacterSelectProps) => {
                 >
                   <span className="text-5xl">{char.emoji}</span>
                   <span className="text-sm font-bold text-foreground">{char.label}</span>
-                  <span className="text-[10px] text-muted-foreground">{char.desc}</span>
                   <span className="text-[10px] font-semibold text-primary/80 bg-primary/10 px-2 py-0.5 rounded-full">{char.trait}</span>
                 </motion.button>
               ))}
